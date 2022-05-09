@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <id>UpgradeAssistant.Extension.CleanUp</id>
+        <version>1.0.0</version>
+        <title>UpgradeAssistant.Extension.CleanUp</title>
+        <authors>Marko Bode</authors>
+        <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+        <projectUrl>https://github.com/markobode11/extension-cleanup</projectUrl>
+        <description>.NET Upgrade Assistant extension to clean up after a successful upgrade.</description>
+        <copyright>Marko Bode</copyright>
+        <tags>.NET Upgrade Assistant</tags>
+        <repository url="https://github.com/markobode11/extension-cleanup" />
+        <dependencies>
+            <group targetFramework=".NETStandard2.0">
+                <dependency id="Microsoft.DotNet.UpgradeAssistant.Abstractions" version="*" exclude="Build,Analyzers" />
+        	    <dependency id="Microsoft.Build" version="17.1.0" />       
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="UpgradeAssistant.Extension.CleanUp\bin\Debug\net6.0\*.dll" target="" />
+        <file src="UpgradeAssistant.Extension.CleanUp\bin\Debug\net6.0\*.pdb" target="" />
+        <file src="UpgradeAssistant.Extension.CleanUp\bin\Debug\net6.0\*.deps.json" target="" />
+        <file src="UpgradeAssistant.Extension.CleanUp\bin\Debug\net6.0\ExtensionManifest.json" target="" />
+    </files>
+</package>
