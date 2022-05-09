@@ -4,6 +4,29 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>UpgradeAssistant.Extension.CleanUp</Title>
+        <Authors>Marko Bode</Authors>
+        <Description>.NET Upgrade Assistant extension to clean up after a successful upgrade.</Description>
+        <Copyright>Marko Bode</Copyright>
+        <PackageProjectUrl>https://github.com/markobode11/extension-cleanup</PackageProjectUrl>
+        <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/markobode11/extension-cleanup</RepositoryUrl>
+        <PackageTags>.NET Upgrade Assistant</PackageTags>
+        <Version>1.0.0</Version>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Build" Version="17.1.0" />
+        <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Abstractions" Version="*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="ExtensionManifest.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+<!--        <Content Include="NuGetExtensionManifest\ExtensionManifest.json">-->
+<!--            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>-->
+<!--        </Content>-->
+    </ItemGroup>
 </Project>

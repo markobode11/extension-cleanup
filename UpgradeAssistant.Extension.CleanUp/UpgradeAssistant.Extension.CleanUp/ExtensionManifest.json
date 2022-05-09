@@ -1,0 +1,7 @@
+{
+  "ExtensionName": "CleanUp",
+
+  "ExtensionServiceProviders": [
+    "UpgradeAssistant.Extension.CleanUp.dll"
+  ]
+}

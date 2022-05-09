@@ -13,4 +13,10 @@
     <SourceRoot Include="C:\Users\marko.bode\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.dotnet.upgradeassistant.abstractions\0.3.310801\build\Microsoft.DotNet.UpgradeAssistant.Abstractions.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dotnet.upgradeassistant.abstractions\0.3.310801\build\Microsoft.DotNet.UpgradeAssistant.Abstractions.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\marko.bode\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+  </PropertyGroup>
 </Project>
